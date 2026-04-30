@@ -54,6 +54,9 @@ O projeto conta com um **Memorial Analítico** detalhado descrevendo todo o proc
 ## ✒️ Autor
 
 * **Bruno Kali** - [GitHub](https://github.com/brunokali)
+* Bruno Ferreira Alves - Uniasselvi
+Análise e Desenvolvimento de Sistemas (14392143)
+
 
 ---
 ⌨️ Desenvolvido para fins acadêmicos.
