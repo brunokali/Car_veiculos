@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Veículos | AutoGestão</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Auto<span>Gestão</span></a>
+        <div class="nav-links">
+            <a href="index.html">Início</a>
+            <a href="cadastro.html">Cadastrar</a>
+            <a href="listagem.html" class="active">Consultar</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="glass-card">
+            <h2>Veículos Cadastrados</h2>
+            <div class="table-container">
+                <table id="tabelaVeiculos">
+                    <thead>
+                        <tr>
+                            <th>Placa</th>
+                            <th>Marca/Modelo</th>
+                            <th>Ano (F/M)</th>
+                            <th>Cor</th>
+                            <th>Combustível</th>
+                            <th>KM</th>
+                            <th>Data Cad.</th>
+                        </tr>
+                    </thead>
+                    <tbody id="corpoTabela">
+                        <!-- Dados carregados via JS -->
+                        <tr>
+                            <td colspan="7" style="text-align: center; color: var(--text-muted);">Carregando veículos...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Executa a listagem assim que a página carregar
+        document.addEventListener('DOMContentLoaded', carregarVeiculos);
+    </script>
+</body>
+</html>
