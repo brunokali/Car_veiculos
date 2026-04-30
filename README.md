@@ -31,10 +31,14 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
    git clone https://github.com/brunokali/Car_veiculos.git
    ```
 
-2. **Configure o Banco de Dados:**
-   - Acesse o seu gerenciador de banco de dados (ex: phpMyAdmin).
-   - Crie um banco de dados chamado `car_veiculos`.
-   - Importe o arquivo `database.sql` que está na raiz do projeto.
+2. **Configure o Banco de Dados (Passo a Passo):**
+   - No seu navegador, acesse `http://localhost/phpmyadmin`.
+   - No menu lateral esquerdo, clique em **"Novo"**.
+   - No campo "Nome do banco de dados", digite **`car_veiculos`** e clique em **"Criar"**.
+   - Com o banco `car_veiculos` selecionado, clique na aba **"Importar"** no menu superior.
+   - Clique no botão **"Escolher arquivo"** e selecione o arquivo `database.sql` que está na raiz deste projeto.
+   - Role até o final da página e clique no botão **"Importar"** (ou "Executar").
+   - O phpMyAdmin exibirá uma mensagem de sucesso confirmando a criação da tabela.
 
 3. **Configure a Conexão:**
    - Se necessário, ajuste as credenciais de acesso ao banco no arquivo `php/config.php`.
